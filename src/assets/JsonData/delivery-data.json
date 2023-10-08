@@ -1,0 +1,22 @@
+[
+    {
+        "iconPath":"/img/dhl.png",
+        "iconAlt":"DHL",
+        "iconRoute":"#"
+    },
+    {
+        "iconPath":"/img/fedex.png",
+        "iconAlt":"FedEx",
+        "iconRoute":"#"
+    },
+    {
+        "iconPath":"/img/ems.png",
+        "iconAlt":"Pos Indonesia EMS",
+        "iconRoute":"#"
+    },
+    {
+        "iconPath":"/img/ups.png",
+        "iconAlt":"Pos Indonesia EMS",
+        "iconRoute":"#"
+    }
+]

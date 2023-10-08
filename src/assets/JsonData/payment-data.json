@@ -1,0 +1,12 @@
+[
+    {
+        "iconPath":"/img/paypal.png",
+        "iconAlt":"Paypal",
+        "iconRoute":"#"
+    },
+    {
+        "iconPath":"/img/westernunion.png",
+        "iconAlt":"Western Union",
+        "iconRoute":"#"
+    }
+]

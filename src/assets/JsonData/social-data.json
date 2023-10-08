@@ -1,0 +1,12 @@
+[
+    {
+        "iconPath":"/img/instagram.png",
+        "iconAlt":"Instagram",
+        "iconRoute":"https://www.instagram.com/firdanmildani/"
+    },
+    {
+        "iconPath":"/img/instagram.png",
+        "iconAlt":"Facebook",
+        "iconRoute":"https://www.instagram.com/firdanmildani/"
+    }
+]

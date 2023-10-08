@@ -1,0 +1,27 @@
+[
+    {
+        "imagePath":"/img/worldwide-delivery.svg",
+        "imageAlt":"Worldwide Picture",
+        "featureTitle":"Worldwide Shipping",
+        "featureCaption":"We ship products worldwide with reliable service, including legal documentation and secure packaging as requested to ensure smooth delivery to your destination."
+    },
+    {
+        "imagePath":"/img/quality2.svg",
+        "imageAlt":"Quality",
+        "featureTitle":"Quality",
+        "featureCaption":"We offer top-notch gourmet vanilla sourced from local farmers and experts who ensure consistent planting, harvesting, and maintenance."
+    },
+    {
+        "imagePath":"/img/secure-transaction1.svg",
+        "imageAlt":"Payment",
+        "featureTitle":"Secure & Easy Payment",
+        "featureCaption":"We offer safe and convenient payment methods such as debit/credit cards and online platforms such as Visa and PayPal to make it easy and secure for you to pay for our products and services."
+    },
+    {
+        "imagePath":"/img/fast-delivery1.svg",
+        "imageAlt":"On Time",
+        "featureTitle":"Fast Shipment",
+        "featureCaption":"We offer fast shipping options, utilizing trusted carriers and express services to ensure your orders get to you quickly and efficiently."
+    }
+    
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "route": "/",
+        "imagePath":"/img/vanillabean.jpg",
+        "imageAlt":"Vanilla Picture",
+        "categoryName":"Vanilla Bean"
+    },
+    {
+        "route": "/",
+        "imagePath":"/img/groundvanilla.JPG",
+        "imageAlt":"Vanilla Picture",
+        "categoryName":"Ground Vanilla"
+    },
+    {
+        "route": "/",
+        "imagePath":"/img/vanillaextract.jpg",
+        "imageAlt":"Vanilla Picture",
+        "categoryName":"Vanilla Extract"
+    }
+]
