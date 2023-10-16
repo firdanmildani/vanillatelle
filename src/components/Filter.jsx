@@ -23,7 +23,7 @@ function Filter({ setCategoryFilter, selectedCategory }) {
   const buttons = ['Vanilla Bean', 'Ground Vanilla', 'Vanilla Extract'];
 
   return (
-    <div>
+    <div className='filter'>
       {buttons.map((label, index) => (
         <button
           key={index}

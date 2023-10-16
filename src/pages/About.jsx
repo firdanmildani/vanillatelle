@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
     <div className="section" id='about-banner'>
-        <Parallax className="hero-img" strength={600} bgImage="/img/heropic.jpg" id='about-us'>
+        <Parallax className="hero-img" strength={600} bgImage="/img/banner2.jpg" id='about-us'>
             <div className="hero-content-wrapper" id='hero-about'>
                 <div className="hero-content">
                     <h1>ABOUT US</h1>                
@@ -19,11 +19,12 @@ const About = () => {
         </Parallax>
     </div>
     <div className="section" id='about-main'>
-        <div className="section-content row">
+        <div className="section-content about-content row">
             <div className="col about-detail d-flex justify-content-center align-items-center ">
                 <div className="about-caption">
                     <h5>Welcome to Vanillatelle</h5>
-                    <p>Vanillatales is a company that has the best premium vanilla beans in Indonesia, our vanilla is harvested and processed directly by experienced experts in order to maintain the best premium quality of our vanilla. Our vanilla quality is highly trusted by local and international markets. to ensure the quality of our products are safe, clean and healthy to the hands of consumers</p>
+                    <p>When you choose Vanillatelle, you’re choosing more than just a product. You’re choosing a promise. A promise of the purest essence of vanilla, a promise of ethical conduct, a promise of a brighter, more sustainable future, and a promise of an exceptional customer experience.
+                        Vanillatelle is committed to providing you with the highest quality vanilla products. <br/><br/>But we’re more than just quality. We believe in exceptional customer experiences. With fast shipment options and dedicated after-sales support, we ensure your journey with Vanillatelle is seamless and satisfying.</p>
                 </div>
             </div>
             <div className="col about-media d-flex flex-row-reverse ratio ratio-1x1">
@@ -35,20 +36,21 @@ const About = () => {
             <h5>savor the essence of vanilla</h5>
         </div> */}
 
-        <div className="section-content row " >
+        <div className="section-content about-content row " >
             <div className="col about-media d-flex flex-row-start ratio ratio-1x1">
-                <img src="/img/packing.jpg" alt=""/>
+                <img src="/img/packing1.jpg" alt=""/>
             </div>
             <div className="col about-detail d-flex justify-content-center align-items-center ">
                 <div className="about-caption">
-                    <h5>Welcome to Vanillatelle</h5>
-                    <p>Vanillatales is a company that has the best premium vanilla beans in Indonesia, our vanilla is harvested and processed directly by experienced experts in order to maintain the best premium quality of our vanilla. Our vanilla quality is highly trusted by local and international markets. to ensure the quality of our products are safe, clean and healthy to the hands of consumers</p>
+                    {/* <h5>Welcome to Vanillatelle</h5> */}
+                    <p>Whether you’re a baker looking for the perfect vanilla extract to elevate your creations, a home cook looking to add a touch of luxury to your everyday dishes, or simply a vanilla lover who wants to enjoy the purest essence of this delicious flavor, Vanillatelle is the perfect choice for you.
+                    <br/><br/>We invite you to experience the Vanillatelle difference. With every purchase, you’re not just buying a product, you’re supporting a better future for vanilla farmers and the planet.</p>
                 </div>
             </div>
         </div>
     </div>
     <div className="" id=''>
-        <Parallax className="hero-img" strength={600} bgImage="/img/product1.png" id='about-us'>
+        <Parallax className="hero-img" strength={600} bgImage="/img/shipping.jpg" id='about-us'>
             <div className="hero-content-wrapper" id='hero-about'>
                 <div className="hero-content">
                     {/* <h1>We Provide You With The Best Vanilla in The World</h1> */}
@@ -63,7 +65,7 @@ const About = () => {
             </div>
             <div className="team-profile d-flex justify-content-center">
                 <div className="row col d-flex justify-content-center">
-                    <div className="team-card mx-5">
+                    <div className="team-card mx-5 py-2">
                         <div className="team-media d-flex justify-content-center align-items-center">
                             <img src="/img/faaz.jpg" alt=""/>
                         </div>
@@ -88,7 +90,7 @@ const About = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="team-card mx-5">
+                    <div className="team-card mx-5 py-2">
                         <div className="team-media d-flex justify-content-center align-items-center">
                             <img src="/img/firdan.jpg" alt=""/>
                         </div>

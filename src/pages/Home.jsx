@@ -69,11 +69,11 @@ const Home = () => {
                     <h2>OUR PRODUCTS</h2>
                 </div>
                 <div className="section-content">
-                    <div className="d-flex row">
+                    <div className="d-flex row col">
                     {products.slice(0, 4).map((product) => (
                         <Product
                             key={product._id}
-                            imagePath={product.imagePath}
+                            images={product.images}
                             imageAlt={product.imageAlt}
                             name={product.name}
                             productCaption={product.productCaption}
@@ -153,12 +153,12 @@ const Home = () => {
                 <div className="section-title d-flex justify-content-center mb-4">
                     <h2>ABOUT US</h2>
                 </div>
-                <div className="section-content row d-flex justify-content-between">
-                        <div className="about-desc col-sm-6">
+                <div className="section-content about-content-home row">
+                        <div className="about-desc col-lg-6">
                             <p>Vanillatelle always provides premium quality vanilla beans. Our vanilla undergoes meticulous harvesting and processing by skilled professionals to ensure the preservation of its premium quality. We have earned the trust of both local and international markets due to the exceptional quality of our vanilla. We prioritize the safety, cleanliness and overall health of our products, ensuring they meet the highest standards before reaching the hands of consumers.</p>
                             <a className="button btn-theme-primary btn-lg" title="Planifolia Vanilla Beans Indonesia" href="/about-us">Read More</a>
                         </div>                             
-                        <div className="about-media col-sm-6">
+                        <div className="about-media col-lg-6">
                             <img className="about-img" src="/img/about.jpg" alt="Vanilla" />
                         </div>
                 </div>

@@ -45,7 +45,7 @@ const Shop = () => {
               setCategoryFilter={setSelectedCategory}
             />
           </div>
-          <div className="col d-flex justify-content-end">
+          <div className="col d-flex justify-content-end search-container">
             <input
               className="search-input"
               type="text"

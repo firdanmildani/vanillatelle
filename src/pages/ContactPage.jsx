@@ -9,7 +9,7 @@ const ContactPage = () => {
         <div className="section-title text-center mb-5">
           <h1>GET IN TOUCH</h1>
         </div>
-        <div className="row">
+        <div className="row contact-us-container">
           <div className="col">
           <form>
             <div className="row g-3">
@@ -42,35 +42,41 @@ const ContactPage = () => {
           <div className="col py-4">
             <b>Contact Us</b>
             <div className="address-contact">
-              <span className="fa-layers fa-stack">
-                <FontAwesomeIcon icon={faCircle} style={{color: "#FFF",}} size="xl"/>
-                <FontAwesomeIcon icon={faLocationDot} style={{color: "#191A19",}} size="xs"/>
-              </span>
-              <div className="address-content">
-                <b>CV. Vanilla Gemstone Indonesia</b>
-                <br/>
-                <p>
-                  Kampung Selatamiang No.1, Sukajaya, Kab. Sukabumi, Kabupaten Sukabumi, Jawa Barat 43151
-                </p>
-              </div>
+              <a href="https://maps.app.goo.gl/o9CbDQPQKhg23dvR6" target='blank'>
+                <span className="fa-layers fa-stack">
+                  <FontAwesomeIcon icon={faCircle} style={{color: "#FFF",}} size="xl"/>
+                  <FontAwesomeIcon icon={faLocationDot} style={{color: "#191A19",}} size="xs"/>
+                </span>
+                <div className="address-content">
+                  <b>CV. Vanilla Gemstone Indonesia</b>
+                  <br/>
+                  <p>
+                    Kampung Selatamiang No.1, Sukajaya, Kab. Sukabumi, Kabupaten Sukabumi, Jawa Barat 43151
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="address-contact">
-              <span className="fa-layers fa-stack">
-                <FontAwesomeIcon icon={faCircle} style={{color: "#FFF",}} size="xl"/>
-                <FontAwesomeIcon icon={faPhone} style={{color: "#191A19",}} size="xs"/>
-              </span>
-              <div className="address-content">
-                <a href="">123456789101</a>
-              </div>
+              <a href="https://api.whatsapp.com/send?phone=1234567890" target='blank'>
+                <span className="fa-layers fa-stack">
+                  <FontAwesomeIcon icon={faCircle} style={{color: "#FFF",}} size="xl"/>
+                  <FontAwesomeIcon icon={faPhone} style={{color: "#191A19",}} size="xs"/>
+                </span>
+                <div className="address-content">
+                    123456789101
+                </div>
+              </a>
             </div>
             <div className="address-contact">
-              <span className="fa-layers fa-stack">
-                <FontAwesomeIcon icon={faCircle} style={{color: "#FFF",}} size="xl"/>
-                <FontAwesomeIcon icon={faEnvelope} style={{color: "#191A19",}} size="xs"/>
-              </span>
-              <div className="address-content">
-                <a href="mailto:support@vanillatelle.com">support@vanillatelle.com</a>
-              </div>
+              <a href="mailto:support@vanillatelle.com">
+                <span className="fa-layers fa-stack">
+                  <FontAwesomeIcon icon={faCircle} style={{color: "#FFF",}} size="xl"/>
+                  <FontAwesomeIcon icon={faEnvelope} style={{color: "#191A19",}} size="xs"/>
+                </span>
+                  <div className="address-content">
+                    support@vanillatelle.com
+                  </div>
+              </a>
             </div>
           </div>
         </div>

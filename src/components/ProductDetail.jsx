@@ -20,6 +20,36 @@ const ProductDetail = () => {
         setActiveTab(tabName);
     };
 
+    const shareURL = window.location.href; // Get the current URL of the product page
+
+    const socialShareLinks = [
+      {
+        platform: 'Facebook',
+        icon: faFacebook,
+        url: `https://www.facebook.com/sharer/sharer.php?u=${shareURL}`,
+      },
+      {
+        platform: 'Pinterest',
+        icon: faPinterest,
+        url: `https://www.pinterest.com/pin/create/button/?url=${shareURL}`,
+      },
+      {
+        platform: 'Twitter',
+        icon: faTwitter,
+        url: `https://twitter.com/intent/tweet?url=${shareURL}`,
+      },
+      {
+        platform: 'LinkedIn',
+        icon: faLinkedin,
+        url: `https://www.linkedin.com/shareArticle?mini=true&amp;url=${shareURL}`,
+      },
+      {
+        platform: 'WhatsApp',
+        icon: faWhatsapp,
+        url: `https://api.whatsapp.com/send?text=${shareURL}`,
+      },
+    ];
+  
     return (
     <>          
     <div className="product-main row">
@@ -50,23 +80,22 @@ const ProductDetail = () => {
         <div className="col-lg-6 col-md-12 col-12 product-info">
             <h1>{product.name}</h1>
             <p>{product.productCaption}</p>
-            <div className="share-container">
-                <h6>Share : </h6>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/dQw4w9WgXcQ?si=7uf71k9SCj0IMBXC" target="_blank" className='px-2'>
-                    <FontAwesomeIcon icon={faFacebook} className="social-icon" size="lg"/>
-                </a>
-                <a href="https://www.pinterest.com/pin/create/button/?url=https://vanillature.com/product/planifolia-ground-vanilla-powder/&media=https://vanillature.com/wp-content/uploads/2021/10/IMG_20230825_102210_103706.jpg&description=wagwan" target="_blank" className='px-2'>
-                    <FontAwesomeIcon icon={faPinterest} className="social-icon" size="lg"/>
-                </a>
-                <a href="https://twitter.com/intent/tweet?url=https://youtu.be/dQw4w9WgXcQ?si=7uf71k9SCj0IMBXC&text=Get rekt" target="_blank" className='px-2'>
-                    <FontAwesomeIcon icon={faTwitter} className="social-icon" size="lg"/>
-                </a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://vanillature.com/product/planifolia-ground-vanilla-powder/&amp;title=Planifolia%20Ground%20Vanilla%20Powder" target="_blank" className='px-2'>
-                    <FontAwesomeIcon icon={faLinkedin} className="social-icon" size="lg"/>
-                </a>
-                <a href="https://api.whatsapp.com/send?text=test%20-%20https://youtu.be/dQw4w9WgXcQ?si=7uf71k9SCj0IMBXC" target="_blank" className='px-2'>
-                    <FontAwesomeIcon icon={faWhatsapp} className="social-icon" size="lg"/>
-                </a>
+                <div className="share-container">
+                <h6>Share :</h6>
+                {socialShareLinks.map((shareLink, index) => (
+                    <a
+                        href={shareLink.url}
+                        target="_blank"
+                        className="px-2"
+                        key={index}
+                    >
+                        <FontAwesomeIcon
+                        icon={shareLink.icon}
+                        className="social-icon"
+                        size="lg"
+                        />
+                    </a>
+                ))}
             </div>
         </div>   
     </div>
@@ -89,7 +118,7 @@ const ProductDetail = () => {
                 </a>
             </li>
         </ul>
-        <div id="tab-description" role="tabpanel" style={{ display: activeTab === 'description' ? 'block' : 'none' }}>				
+        <div className='product-tab' id="tab-description" role="tabpanel" style={{ display: activeTab === 'description' ? 'block' : 'none' }}>				
             <h2>Description</h2>
             <p>{product.description}</p>
             {/* <ul>
@@ -104,11 +133,11 @@ const ProductDetail = () => {
             <li><span className="">Affordable Price</span></li>
             </ul> */}
             <div className="text_exposed_show">
-                <p>We firmly believe that our vanilla beans stand out as some of the finest in the world. You can trust us to provide the best quality vanilla beans at affordable prices. Become a part of our community today!</p>
+                <p>We firmly believe that our vanilla products stand out as some of the finest in the world. You can trust us to provide the best quality vanilla products at affordable prices. Become a part of our community today!</p>
             </div>
         </div>
 
-        <div id="tab-specification" role="tabpanel" style={{ display: activeTab === 'specification' ? 'block' : 'none' }}>
+        <div className='product-tab' id="tab-specification" role="tabpanel" style={{ display: activeTab === 'specification' ? 'block' : 'none' }}>
         <h2>Specification</h2>
             {/* <p>Are you a pastry chef, restaurateur, baker, ice cream maker, cooking school, dessert maker, or just passionate about cooking with the highest quality vanilla pods? You have come to the right place!</p> */}
             {/* <figure className=""> */}
@@ -147,7 +176,7 @@ const ProductDetail = () => {
             {/* </figure> */}
         </div>
 
-        <div id="tab-how_to_buy" role="tabpanel" style={{ display: activeTab === 'how_to_buy' ? 'block' : 'none' }}>
+        <div className='product-tab' id="tab-how_to_buy" role="tabpanel" style={{ display: activeTab === 'how_to_buy' ? 'block' : 'none' }}>
         <h2>How to Buy</h2>
             <p>For orders or inquiries please contact us :</p>
             <div className="img-container mb-3">

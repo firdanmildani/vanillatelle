@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import MainRoutes from '../routes/MainRoutes'
+import ChatIcon from '../components/ChatIcon'
 // import MainRoutes from '../MainRoutes'
 
 const Layout = () => {
@@ -12,6 +13,7 @@ const Layout = () => {
           <MainRoutes/>
         </div>
       <Footer/>
+      <ChatIcon/>
     </div>
     
   )
