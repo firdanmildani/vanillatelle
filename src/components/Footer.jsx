@@ -28,44 +28,41 @@ const Footer = () => {
                     <div className="socials mb-2">
                         <span className='footer-span'>Our Socials</span>
                         <div className="icons d-flex">
-                            {
-                                social_data.map((item,index) => (
-                                    <FooterIcons
-                                        iconPath={item.iconPath}
-                                        iconAlt={item.iconAlt}
-                                        iconRoute={item.iconRoute}
-                                    />
-                                ))
+                            {social_data.map((item, index) => (
+                                <FooterIcons
+                                key={index} // Provide a unique key
+                                iconPath={item.iconPath}
+                                iconAlt={item.iconAlt}
+                                iconRoute={item.iconRoute}
+                                />
+                            ))
                             }
+                            </div>
                         </div>
-                    </div>
-                    <div className="payment mb-2">
-                        <span className='footer-span'>Secure Payment Gateways</span>
-                        <div className="icons d-flex">
-                            {
-                                payment_data.map((item,index) => (
-                                    <FooterIcons
-                                        iconPath={item.iconPath}
-                                        iconAlt={item.iconAlt}
-                                        iconRoute={item.iconRoute}
-
-                                    />
-                                ))
-                            }
+                        <div className="payment mb-2">
+                            <span className='footer-span'>Secure Payment Gateways</span>
+                            <div className="icons d-flex">
+                            {payment_data.map((item, index) => (
+                                <FooterIcons
+                                key={index} // Provide a unique key
+                                iconPath={item.iconPath}
+                                iconAlt={item.iconAlt}
+                                iconRoute={item.iconRoute}
+                                />
+                            ))}
+                            </div>
                         </div>
-                    </div>
-                    <div className="delivery mb-2">
-                        <span className='footer-span'>Delivery Method</span>
-                        <div className="icons d-flex">
-                            {
-                                delivery_data.map((item,index) => (
-                                    <FooterIcons
-                                        iconPath={item.iconPath}
-                                        iconAlt={item.iconAlt}
-                                        iconRoute={item.iconRoute}
-                                    />
-                                ))
-                            }
+                        <div className="delivery mb-2">
+                            <span className='footer-span'>Delivery Method</span>
+                            <div className="icons d-flex">
+                            {delivery_data.map((item, index) => (
+                                <FooterIcons
+                                key={index} // Provide a unique key
+                                iconPath={item.iconPath}
+                                iconAlt={item.iconAlt}
+                                iconRoute={item.iconRoute}
+                                />
+                            ))}
                         </div>                
                     </div>
                 </div> 

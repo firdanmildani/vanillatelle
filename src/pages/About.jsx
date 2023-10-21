@@ -1,10 +1,8 @@
 import React from 'react'
 import { Parallax } from "react-parallax";
-import Features from '../components/Features';
-import features_data from '../assets/JsonData/features-data.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCircle, faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const About = () => {
   return (
@@ -31,10 +29,6 @@ const About = () => {
                 <img src="/img/worker.jpg" alt=""/>
             </div>
         </div>
-        {/* <div className="section text-center my-5">
-            <h1>We Provide You With The Best Vanilla in The World</h1>
-            <h5>savor the essence of vanilla</h5>
-        </div> */}
 
         <div className="section-content about-content row " >
             <div className="col about-media d-flex flex-row-start ratio ratio-1x1">
@@ -81,7 +75,7 @@ const About = () => {
                                 <a href="https://www.instagram.com/m.faazrizal/" target="_blank" className='px-2'>
                                     <FontAwesomeIcon icon={faInstagram} className="social-icon" size="lg"/>
                                 </a>
-                                <a href="mailto:support@vanillatelle.com" className='px-2'>
+                                <a href="mailto:m.faaz.fahrizal09@gmail.com" className='px-2'>
                                     <FontAwesomeIcon icon={faEnvelope} className="social-icon" size="lg"/>
                                 </a>
                                 <a href="https://www.linkedin.com/in/faaz-fahrizal-745aa9200/" target="_blank" className='px-2'>
@@ -118,7 +112,6 @@ const About = () => {
                 </div>
             </div>
         </div>
-        {/* </div> */}
     </div>
     </>
   )

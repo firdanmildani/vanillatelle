@@ -14,19 +14,19 @@ const ContactPage = () => {
           <form>
             <div className="row g-3">
               <div className="col-md-12">
-                <label for="your-name" className="form-label">NAME</label>
+                <label htmlFor="your-name" className="form-label">NAME</label>
                 <input type="text" className="form-control" id="" name="" required/>
               </div>
               <div className="col-md-12">
-                <label for="your-surname" className="form-label">CITY / COUNTRY</label>
+                <label htmlFor="your-surname" className="form-label">CITY / COUNTRY</label>
                 <input type="text" className="form-control" id="" name="" required/>
               </div>
               <div className="col-md-12">
-                <label for="your-email" className="form-label">EMAIL</label>
+                <label htmlFor="your-email" className="form-label">EMAIL</label>
                 <input type="email" className="form-control" id="your-email" name="your-email" required/>
               </div>
               <div className="col-12">
-                <label for="your-message" className="form-label">MESSAGE</label>
+                <label htmlFor="your-message" className="form-label">MESSAGE</label>
                 <textarea className="form-control" id="your-message" name="your-message" rows="5" required></textarea>
               </div>
               <div className="col-12">

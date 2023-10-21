@@ -4,7 +4,7 @@ import { Parallax } from "react-parallax";
 const Hero = () => {
     return (
         <div className="hero">
-            <Parallax className="hero-img" strength={500} bgImage="/img/hero.JPG">
+            <Parallax className="hero-img" strength={500} bgImage="/img/hero.jpg">
                 <div className="hero-content-wrapper">
                     <div className="hero-content">
                         <span>Welcome to Vanillatelle!</span>

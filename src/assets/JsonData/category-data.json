@@ -7,7 +7,7 @@
     },
     {
         "route": "/",
-        "imagePath":"/img/groundvanilla.JPG",
+        "imagePath":"/img/groundvanilla.jpg",
         "imageAlt":"Vanilla Picture",
         "categoryName":"Ground Vanilla"
     },

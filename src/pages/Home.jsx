@@ -13,6 +13,15 @@ import { products } from '../assets/db/products';
 
 
 const Home = () => {
+
+    const organizationData = {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Vanillatelle",
+        "url": "https://www.vanillatelle.com",
+        "logo": "https://www.vanillatelle.com/favicon.ico"
+    };
+
     return(
         <>
         <div className="section" id="hero-section">
@@ -25,15 +34,15 @@ const Home = () => {
                 </div>
                 <div className="section-content">
                     <div className="row d-flex flex-warp justify-content-center">
-                    {
-                    features_data.map((item,index) => (
+                    {features_data.map((item, index) => (
                         <Features
-                        imagePath={item.imagePath}
-                        imageAlt={item.imageAlt}
-                        featureTitle={item.featureTitle}
-                        featureCaption={item.featureCaption}
+                            key={index} // Provide a unique key
+                            imagePath={item.imagePath}
+                            imageAlt={item.imageAlt}
+                            featureTitle={item.featureTitle}
+                            featureCaption={item.featureCaption}
                         />
-                    ))
+                        ))
                     }     
                     </div>
                 </div>
@@ -52,6 +61,7 @@ const Home = () => {
                         {
                         category_items.map((item,index) => (
                             <Category
+                                key={index}
                                 route={item.route}
                                 imagePath={item.imagePath}
                                 imageAlt={item.imageAlt}
@@ -178,7 +188,12 @@ const Home = () => {
             </div>
         </div>
 
+        <script type="application/ld+json">
+            {JSON.stringify(organizationData)}
+        </script>
+        
         </>
+        
     );
 }
 export default Home;

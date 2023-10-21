@@ -31,21 +31,21 @@ const Navbar = () => {
   }`;
 
   return (
-    // <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-    //   <span class="navbar-toggler-icon"></span>
+    // <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+    //   <span className="navbar-toggler-icon"></span>
     // </button>
-    // <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-    //   <div class="offcanvas-header">
-    //     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-    //     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    // <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+    //   <div className="offcanvas-header">
+    //     <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+    //     <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     //   </div>
-    //   <div class="offcanvas-body">
-    //     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-    //       <li class="nav-item">
-    //         <a class="nav-link active" aria-current="page" href="#">Home</a>
+    //   <div className="offcanvas-body">
+    //     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+    //       <li className="nav-item">
+    //         <a className="nav-link active" aria-current="page" href="#">Home</a>
     //       </li>
-    //       <li class="nav-item">
-    //         <a class="nav-link" href="#">Link</a>
+    //       <li className="nav-item">
+    //         <a className="nav-link" href="#">Link</a>
     //       </li>
     //     </ul>
     //   </div>
@@ -53,11 +53,11 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg ${navbarClasses}`}>
       <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <img className="brand-logo" src="/img/Logo2.png" alt="Logo" />
+            <img className="brand-logo" src="/img/logo2.png" alt="Logo" />
           </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <FontAwesomeIcon icon={faBars} className="social-icon" size="lg"/>
-          {/* <span class="navbar-toggler-icon"></span> */}
+          {/* <span className="navbar-toggler-icon"></span> */}
         </button>
         {/* <div className="collapse navbar-collapse" id="navbarNav">
         
@@ -65,12 +65,12 @@ const Navbar = () => {
             
           </ul>
         </div> */}
-      <div class="collapse navbar-collapse offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div className="collapse navbar-collapse offcanvas offcanvas-end text-bg-dark" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div className="offcanvas-header">
+            <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <div className="offcanvas-body">
+            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item">
               <a className={`nav-link ${location.pathname === '/' ? 'nav-active' : ''}`} href="/">
                 Home

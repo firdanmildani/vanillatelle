@@ -49,7 +49,32 @@ const ProductDetail = () => {
         url: `https://api.whatsapp.com/send?text=${shareURL}`,
       },
     ];
-  
+    
+    const message = `Hello, I want to buy this: ${shareURL}`;
+    const phoneNumber = '6281563143180'; // The target phone number
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
+    // JSON-LD schema markup for the product
+    const productSchema = {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": product.name,
+        "description": product.description,
+        "image": product.images.img1,
+        "sku": product._id,
+        "brand": {
+            "@type": "Brand",
+            "name": "Your Brand Name"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": product.price,
+            "priceCurrency": "USD",
+            "availability": "InStock",
+            "url": window.location.href
+        }
+    };
+
     return (
     <>          
     <div className="product-main row">
@@ -180,14 +205,17 @@ const ProductDetail = () => {
         <h2>How to Buy</h2>
             <p>For orders or inquiries please contact us :</p>
             <div className="img-container mb-3">
-                <a href="">
+                <a href={whatsappLink} target="_blank">
                     <img src="/img/whatsapp.png" alt="" />
                 </a>
             </div>
             <p>Or you can email us at : <br/><a href="mailto:buy@vanillatelle.com">buy@vanillatelle.com</a></p>
         </div>
     </div>
-                     
+
+    {/* Add JSON-LD schema markup within the component */}
+    <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
+
     </>
   )
 }
