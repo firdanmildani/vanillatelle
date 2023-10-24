@@ -1,4 +1,4 @@
-import tahitian1 from '../img/Tahitian/tahitian (1).jpg';
+import tahitian1 from '../img/Tahitian/tahitian1.jpg';
 import tahitian2 from '../img/Tahitian/tahitian (2).jpg';
 import tahitian3 from '../img/Tahitian/tahitian (3).jpg';
 import tahitian4 from '../img/Tahitian/tahitian (4).jpg';
