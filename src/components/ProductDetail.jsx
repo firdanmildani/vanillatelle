@@ -79,9 +79,11 @@ const ProductDetail = () => {
     <>          
     <div className="product-main row">
         <div className='link'>
-        <a href="">Home </a>
-            <span>/</span>
-            <a href=""> Vanilla Bean</a>
+        <a href="/">Home</a>
+            <span> / </span>
+            <a href="/products">Products</a>
+            <span> / </span>
+            <a href="#">{product.name}</a>
         </div>
         <div className="col-lg-5 col-md-12 col-12 pb-4">
             <div className="ratio ratio-1x1">

@@ -34,9 +34,9 @@ const Shop = () => {
     <div className='section'>
       <div className='container my-5 pt-2'>
         <div className='link mt-2 mb-2'>
-          <a href="">Home </a>
-          <span>/</span>
-          <a href=""> Products</a>
+          <a href="/">Home </a>
+          <span> / </span>
+          <a href="#"> Products</a>
         </div>
         <div className="search-filter row mb-5">
           <div className="col">
