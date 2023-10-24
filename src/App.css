@@ -550,7 +550,7 @@ footer {
 .tabs {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   
 }
 .tabs li a {
