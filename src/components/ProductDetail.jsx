@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { products } from '../assets/db/products';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faPinterest, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const ProductDetail = () => {
     const { productId } = useParams();
@@ -83,7 +84,7 @@ const ProductDetail = () => {
             <span> / </span>
             <a href="/products">Products</a>
             <span> / </span>
-            <a href="javascript:void(0);">{product.name}</a>
+            <Link to={`/product/${product._id}`}>{product.name}</Link>
         </div>
         <div className="col-lg-5 col-md-12 col-12 pb-4">
             <div className="ratio ratio-1x1">
@@ -131,19 +132,19 @@ const ProductDetail = () => {
     <div className="product-footer mt-5">
         <ul className="tabs d-flex col nav nav-right">
             <li className={`nav-item ${activeTab === 'description' ? 'active' : ''}`}>
-                <a className="nav-link nav-link-product" onClick={() => handleTabClick('description')} href='javascript:void(0);'>
+                <Link className="nav-link nav-link-product" onClick={() => handleTabClick('description')}>
                     Description
-                </a>
+                </Link>
             </li>
             <li className={`nav-item ${activeTab === 'specification' ? 'active' : ''}`}>
-                <a className="nav-link nav-link-product" onClick={() => handleTabClick('specification')} href='javascript:void(0);'>
+                <Link className="nav-link nav-link-product" onClick={() => handleTabClick('specification')}>
                     Specification
-                </a>
+                </Link>
             </li>
             <li className={`nav-item ${activeTab === 'how_to_buy' ? 'active' : ''}`}>
-                <a className="nav-link nav-link-product" onClick={() => handleTabClick('how_to_buy')} href='javascript:void(0);'>
+                <Link className="nav-link nav-link-product" onClick={() => handleTabClick('how_to_buy')}>
                     How to buy
-                </a>
+                </Link>
             </li>
         </ul>
         <div className='product-tab' id="tab-description" role="tabpanel" style={{ display: activeTab === 'description' ? 'block' : 'none' }}>				
