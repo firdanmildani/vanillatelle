@@ -1,22 +1,22 @@
 import tahitian1 from '../img/Tahitian/tahitian1.jpg';
-import tahitian2 from '../img/Tahitian/tahitian (2).jpg';
-import tahitian3 from '../img/Tahitian/tahitian (3).jpg';
-import tahitian4 from '../img/Tahitian/tahitian (4).jpg';
+import tahitian2 from '../img/Tahitian/tahitian2.jpg';
+import tahitian3 from '../img/Tahitian/tahitian3.jpg';
+import tahitian4 from '../img/Tahitian/tahitian4.jpg';
 
-import planifolia1 from '../img/Planifolia/planifolia (1).jpg';
-import planifolia2 from '../img/Planifolia/planifolia (2).jpg';
-import planifolia3 from '../img/Planifolia/planifolia (3).jpg';
-import planifolia4 from '../img/Planifolia/planifolia (4).jpg';
+import planifolia1 from '../img/Planifolia/planifolia1.jpg';
+import planifolia2 from '../img/Planifolia/planifolia2.jpg';
+import planifolia3 from '../img/Planifolia/planifolia3.jpg';
+import planifolia4 from '../img/Planifolia/planifolia4.jpg';
 
-import chunk1 from '../img/Chunk/chunk (1).jpg';
-import chunk2 from '../img/Chunk/chunk (2).jpg';
-import chunk3 from '../img/Chunk/chunk (3).jpg';
-import chunk4 from '../img/Chunk/chunk (4).jpg';
+import chunk1 from '../img/Chunk/chunk1.jpg';
+import chunk2 from '../img/Chunk/chunk2.jpg';
+import chunk3 from '../img/Chunk/chunk3.jpg';
+import chunk4 from '../img/Chunk/chunk4.jpg';
 
-import powder1 from '../img/powder/powder (1).jpg';
-import powder2 from '../img/powder/powder (2).jpg';
-import powder3 from '../img/powder/powder (3).jpg';
-import powder4 from '../img/powder/powder (4).jpg';
+import powder1 from '../img/powder/powder1.jpg';
+import powder2 from '../img/powder/powder2.jpg';
+import powder3 from '../img/powder/powder3.jpg';
+import powder4 from '../img/powder/powder4.jpg';
 
 /**
  * Product Database can be added here.
