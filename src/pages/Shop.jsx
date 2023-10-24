@@ -10,13 +10,13 @@ const Shop = () => {
   const [searchQuery, setSearchQuery] = useState(""); // Define searchQuery state
   const [selectedCategory, setSelectedCategory] = useState(category || null); // Set the selected category from the URL or null
 
-  const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // const filteredProducts = products.filter((product) =>
+  //   product.name.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
 
-  const setCategoryFilter = (category) => {
-    setSelectedCategory(category);
-  };
+  // const setCategoryFilter = (category) => {
+  //   setSelectedCategory(category);
+  // };
 
   const { search } = useLocation();
   const query = new URLSearchParams(search);
@@ -36,7 +36,7 @@ const Shop = () => {
         <div className='link mt-2 mb-2'>
           <a href="/">Home </a>
           <span> / </span>
-          <a href="#"> Products</a>
+          <a href="/products"> Products</a>
         </div>
         <div className="search-filter row mb-5">
           <div className="col">

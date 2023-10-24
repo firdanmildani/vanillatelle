@@ -83,7 +83,7 @@ const ProductDetail = () => {
             <span> / </span>
             <a href="/products">Products</a>
             <span> / </span>
-            <a href="#">{product.name}</a>
+            <a href="javascript:void(0);">{product.name}</a>
         </div>
         <div className="col-lg-5 col-md-12 col-12 pb-4">
             <div className="ratio ratio-1x1">
@@ -131,17 +131,17 @@ const ProductDetail = () => {
     <div className="product-footer mt-5">
         <ul className="tabs d-flex col nav nav-right">
             <li className={`nav-item ${activeTab === 'description' ? 'active' : ''}`}>
-                <a className="nav-link nav-link-product" onClick={() => handleTabClick('description')}>
+                <a className="nav-link nav-link-product" onClick={() => handleTabClick('description')} href='javascript:void(0);'>
                     Description
                 </a>
             </li>
             <li className={`nav-item ${activeTab === 'specification' ? 'active' : ''}`}>
-                <a className="nav-link nav-link-product" onClick={() => handleTabClick('specification')}>
+                <a className="nav-link nav-link-product" onClick={() => handleTabClick('specification')} href='javascript:void(0);'>
                     Specification
                 </a>
             </li>
             <li className={`nav-item ${activeTab === 'how_to_buy' ? 'active' : ''}`}>
-                <a className="nav-link nav-link-product" onClick={() => handleTabClick('how_to_buy')}>
+                <a className="nav-link nav-link-product" onClick={() => handleTabClick('how_to_buy')} href='javascript:void(0);'>
                     How to buy
                 </a>
             </li>
