@@ -69,16 +69,16 @@ const About = () => {
                         </div>
                         <div className="team-social d-flex justify-content-center w-100">
                             <span className="fa-stack d-flex justify-content-center ">
-                                <a href="https://www.facebook.com/profile.php?id=100008560969314" target="_blank" className='px-2'>
+                                <a href="https://www.facebook.com/profile.php?id=100008560969314" target="_blank" rel="noreferrer" className='px-2'>
                                     <FontAwesomeIcon icon={faFacebook} className="social-icon" size="lg"/>
                                 </a>
-                                <a href="https://www.instagram.com/m.faazrizal/" target="_blank" className='px-2'>
+                                <a href="https://www.instagram.com/m.faazrizal/" target="_blank" rel="noreferrer" className='px-2'>
                                     <FontAwesomeIcon icon={faInstagram} className="social-icon" size="lg"/>
                                 </a>
                                 <a href="mailto:m.faaz.fahrizal09@gmail.com" className='px-2'>
                                     <FontAwesomeIcon icon={faEnvelope} className="social-icon" size="lg"/>
                                 </a>
-                                <a href="https://www.linkedin.com/in/faaz-fahrizal-745aa9200/" target="_blank" className='px-2'>
+                                <a href="https://www.linkedin.com/in/faaz-fahrizal-745aa9200/" target="_blank" rel="noreferrer" className='px-2'>
                                     <FontAwesomeIcon icon={faLinkedin} className="social-icon" size="lg"/>
                                 </a>
                             </span>
@@ -94,16 +94,16 @@ const About = () => {
                         </div>
                         <div className="team-social d-flex justify-content-center w-100">
                             <span className="fa-stack d-flex justify-content-center ">
-                                <a href="https://www.facebook.com/firdhanmildani/" target="_blank" className='px-2'>
+                                <a href="https://www.facebook.com/firdhanmildani/" target="_blank" rel="noreferrer" className='px-2'>
                                     <FontAwesomeIcon icon={faFacebook} size="lg" className="social-icon"/>
                                 </a>
-                                <a href="https://www.instagram.com/firdanmildani/" target="_blank" className='px-2'>
+                                <a href="https://www.instagram.com/firdanmildani/" target="_blank" rel="noreferrer" className='px-2'>
                                     <FontAwesomeIcon icon={faInstagram} size="lg" className="social-icon"/>
                                 </a>
                                 <a href="mailto:firdanmildani@gmail.com" className='px-2'>
                                     <FontAwesomeIcon icon={faEnvelope} size="lg" className="social-icon"/>
                                 </a>
-                                <a href="https://www.linkedin.com/in/firdan-mildani-9b70571b0/" target="_blank" className='px-2'>
+                                <a href="https://www.linkedin.com/in/firdan-mildani-9b70571b0/" target="_blank" rel="noreferrer" className='px-2'>
                                     <FontAwesomeIcon icon={faLinkedin} size="lg" className="social-icon"/>
                                 </a>
                             </span>

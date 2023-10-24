@@ -111,6 +111,7 @@ const ProductDetail = () => {
                     <a
                         href={shareLink.url}
                         target="_blank"
+                        rel="noreferrer"
                         className="px-2"
                         key={index}
                     >
@@ -205,7 +206,7 @@ const ProductDetail = () => {
         <h2>How to Buy</h2>
             <p>For orders or inquiries please contact us :</p>
             <div className="img-container mb-3">
-                <a href={whatsappLink} target="_blank">
+                <a href={whatsappLink} target="_blank" rel="noreferrer">
                     <img src="/img/whatsapp.png" alt="" />
                 </a>
             </div>
